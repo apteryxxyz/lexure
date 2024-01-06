@@ -1,5 +1,5 @@
 {
-  "name": "lexure",
+  "name": "@apteryxxyz/lexure",
   "version": "0.17.0",
   "description": "Parser and utilities for non-technical user input.",
   "keywords": [
@@ -16,7 +16,8 @@
   "typings": "dist/types/index.d.ts",
   "exports": {
     "import": "./esm/index.mjs",
-    "require": "./dist/lib/index.js"
+    "require": "./dist/lib/index.js",
+    "types": "./dist/types/index.d.ts"
   },
   "files": [
     "dist",
@@ -37,7 +38,7 @@
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "docs": "rimraf docs/reference && typedoc",
     "test": "jest --coverage",
-    "prepare": "npm run build",
+    "//prepare": "npm run build",
     "prepublishOnly": "npm run lint && npm run test"
   },
   "jest": {
